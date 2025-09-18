@@ -7,8 +7,13 @@
         },
         {
             "label": "2025-09-17_14-14-34",
-            "content": "print(\"scrr nao aguento mais\")",
+            "content": "@@ -1,970 +1,30 @@\n-class Towel:%0A    def __init__(self,color:str, size:str):%0A        self.color= color%0A        self.size= size%0A        self.wetness= 0%0A%0A    def dry(self, amout:int):%0A        if self.wetness==self.getMaxWetness():%0A            print(%22umidade ja esta no maximo%22)%0A            return%0A        %0A        self.wetness+=amout%0A        if self.wetness%3E=self.getMaxWetness():%0A            self.wetness=self.getMaxWetness()%0A            print(%22umidade chegou no maximo%22)%0A        %0A%0A    def wringOut(self):%0A        self.wetness=0%0A%0A    def getMaxWetness(self):%0A        if self.size==%22P%22:%0A            return 10%0A        elif self.size==%22M%22:%0A            return 20 %0A        else :%0A            return 30%0A    %0A    def isDry(self):%0A        if self.wetness==0:%0A            return True %0A        else:%0A            return False %0A%0A    def __str__(self):%0A        return f%22cor:%7Bself.color%7D, tamanho:%7Bself.size%7D, umidade:%7Bself.wetness%7D%22%0A%0A%0Acor = %22preto%22%0Atamanho = %22P%22%0Atowel = Towel(cor, tamanho)%0A%0Aprint(towel\n+print(%22scrr nao aguento mais%22\n )\n",
             "lines": "1"
+        },
+        {
+            "label": "2025-09-18_12-06-36",
+            "content": "class Towel:\n    def __init__(self,color:str, size:str):\n        self.color= color\n        self.size= size\n        self.wetness= 0\n\n    def dry(self, amout:int):\n        if self.wetness==self.getMaxWetness():\n            print(\"umidade ja esta no maximo\")\n            return\n        \n        self.wetness+=amout\n        if self.wetness>=self.getMaxWetness():\n            self.wetness=self.getMaxWetness()\n            print(\"umidade chegou no maximo\")\n        \n\n    def wringOut(self):\n        self.wetness=0\n\n    def getMaxWetness(self):\n        if self.size==\"P\":\n            return 10\n        elif self.size==\"M\":\n            return 20 \n        else :\n            return 30\n    \n    def isDry(self):\n        if self.wetness==0:\n            return True \n        else:\n            return False \n\n    def __str__(self):\n        return f\"cor:{self.color}, tamanho:{self.size}, umidade:{self.wetness}\"\n\n\ncor = \"preto\"\ntamanho = \"P\"\ntowel = Towel(cor, tamanho)\n\nprint(towel)",
+            "lines": "43"
         }
     ]
 }

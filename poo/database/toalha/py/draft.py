@@ -1,15 +1,42 @@
-#a: int = 5
-#b: float = 6.4
-#c: str = "jss"
-#d: bool = True
 class Towel:
-    def __init__(self, color: str, size: str): #construtor
-        self.color: str= color
-        self.size: str= size
-        self.wetness: int= 0
-#referencias
-print("Qual a cor da sua toalha e o tamanho?")
-color = input() 
-size = input()
-towel: Towel= Towel(color, size) #objeto
-print(f"Sua toalha é {towel}")
+    def __init__(self,color:str, size:str):
+        self.color= color
+        self.size= size
+        self.wetness= 0
+
+    def dry(self, amout:int):
+        if self.wetness==self.getMaxWetness():
+            print("umidade ja esta no maximo")
+            return
+        
+        self.wetness+=amout
+        if self.wetness>=self.getMaxWetness():
+            self.wetness=self.getMaxWetness()
+            print("umidade chegou no maximo")
+        
+
+    def wringOut(self):
+        self.wetness=0
+
+    def getMaxWetness(self):
+        if self.size=="P":
+            return 10
+        elif self.size=="M":
+            return 20 
+        else :
+            return 30
+    
+    def isDry(self):
+        if self.wetness==0:
+            return True 
+        else:
+            return False 
+
+    def __str__(self):
+        return f"cor:{self.color}, tamanho:{self.size}, umidade:{self.wetness}"
+
+
+cor = input()
+tamanho = input()
+towel = Towel(cor, tamanho)
+print(towel)
