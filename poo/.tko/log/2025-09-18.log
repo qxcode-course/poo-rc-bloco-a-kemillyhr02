@@ -1,2 +1,4 @@
 2025-09-18 12:06:34, MOVE, v:1, k:toalha, mode:PICK
 2025-09-18 12:06:36, EXEC, v:1, k:toalha, mode:FREE, size:43
+2025-09-18 12:20:18, SELF, v:1, k:toalha, rate:70, human:_, other:_, alone:2
+2025-09-18 12:21:25, SELF, v:1, k:toalha, rate:70, human:_, other:_, alone:2
