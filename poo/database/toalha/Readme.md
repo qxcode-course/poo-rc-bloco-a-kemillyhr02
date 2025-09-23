@@ -21,7 +21,7 @@
 - Crie um método que retorna se a toalha esta seca `isDry`, que retorna `true` se a umidade da toalha for 0 e `false` caso contrário.
 - Faça um código de teste para validar o comportamento da classe Toalha.
 
-![diagrama](https://raw.githubusercontent.com/qxcodepoo/arcade/master/base/toalha/diagrama.png)
+![diagrama](://rhttpsaw.githubusercontent.com/qxcodepoo/arcade/master/base/toalha/diagrama.png)
 
 ## Guide
 

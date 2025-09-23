@@ -21,10 +21,11 @@ class Towel:
     def getMaxWetness(self):
         if self.size=="P":
             return 10
-        elif self.size=="M":
+        if self.size=="M":
             return 20 
-        else :
+        if self.size=="G":
             return 30
+        return 0
     
     def isDry(self):
         if self.wetness==0:
@@ -34,9 +35,24 @@ class Towel:
 
     def __str__(self):
         return f"cor:{self.color}, tamanho:{self.size}, umidade:{self.wetness}"
+def main():
+    towel: Towel=Towel(" ", " ")
+    while True :
+        line: str=input()
+        args: list[str]= line.split(" ") 
 
+        if args[0]=="end":
+            break
 
-cor = input()
-tamanho = input()
-towel = Towel(cor, tamanho)
-print(towel)
+        elif args[0]=="new":
+            color:str= args[1]
+            size: str= args[2]
+        elif  args[0]== "dry":
+            amount: int= int(args[1])
+            towel.dry(amount)    
+            towel=Towel(color, size)
+        elif args[0] == "show":
+            print(towel)
+        else :
+            print("fail: comando não encontrado")
+main() #passo 1
