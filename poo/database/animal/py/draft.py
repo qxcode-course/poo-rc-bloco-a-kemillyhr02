@@ -5,7 +5,7 @@ class Animal:
         self.age: int= 0
 
     def __str__(self) -> str :
-        return f"{self.species}:{self.sound}:{self.age}"
+        return f"{self.species}:{self.age}:{self.sound}"
 
 
     def ageBy(self, increment: int):
@@ -44,3 +44,5 @@ def main():
             animal.ageBy(n)
         elif args[0]=="noise":
             animal.makeSound()
+
+main()

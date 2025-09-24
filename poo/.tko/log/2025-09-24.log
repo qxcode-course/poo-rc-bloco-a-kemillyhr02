@@ -1,3 +1,9 @@
 2025-09-24 13:20:48, MOVE, v:1, k:animal, mode:PICK
 2025-09-24 14:53:20, EXEC, v:1, k:animal, mode:FULL, rate:0, size:46
 2025-09-24 14:54:24, MOVE, v:1, k:animal, mode:BACK
+2025-09-24 14:58:57, MOVE, v:1, k:animal, mode:PICK
+2025-09-24 14:58:57, EXEC, v:1, k:animal, mode:FULL, rate:25, size:48
+2025-09-24 14:59:33, EXEC, v:1, k:animal, mode:FULL, rate:100, size:48
+2025-09-24 14:59:36, MOVE, v:1, k:animal, mode:BACK
+2025-09-24 14:59:55, SELF, v:1, k:animal, rate:100, alone:10
+2025-09-24 15:00:05, SELF, v:1, k:toalha, rate:100, human:_, other:_, alone:10
