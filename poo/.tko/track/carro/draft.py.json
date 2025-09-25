@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-25_12-50-39",
+            "content": "@@ -155,17 +155,16 @@\n  f%22pass:\n- \n %7Bself.ps\n@@ -171,17 +171,16 @@\n g%7D, gas:\n- \n %7Bself.ga\n@@ -186,17 +186,16 @@\n as%7D, km:\n- \n %7Bself.km\n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-09-25_12-51-03",
+            "content": "@@ -282,16 +282,17 @@\n : limite\n+s\n  de pess\n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-09-25_12-51-13",
+            "content": "@@ -417,36 +417,36 @@\n nt(f%22fail: n\n-%C3%A3o h%C3%A1\n+ao ha\n  ningu\n-%C3%A9\n+e\n m no carro%22)\n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-09-25_12-51-27",
+            "content": "@@ -705,20 +705,20 @@\n l: n\n-ao ha\n+%C3%A3o h%C3%A1\n  ningu\n-e\n+%C3%A9\n m no\n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-09-25_12-52-07",
+            "content": "@@ -417,36 +417,36 @@\n nt(f%22fail: n\n-ao ha\n+%C3%A3o h%C3%A1\n  ningu\n-e\n+%C3%A9\n m no carro%22)\n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-09-25_12-52-26",
+            "content": "@@ -866,17 +866,17 @@\n vazio ap\n-o\n+%C3%B3\n s andar \n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-09-25_12-52-47",
+            "content": "class Carro:\n    def __init__(self):\n        self.psg: int=0\n        self.km: int=0\n        self.gas: int=0\n   \n    def __str__(self)->str:\n        return f\"pass: {self.psg}, gas: {self.gas}, km: {self.km}\"\n    \n    def enter(self):\n        if self.psg>=2:\n            print(f\"fail: limite de pessoas atingido\")\n        else :\n            self.psg+=1\n    \n    def leave(self):\n        if self.psg==0:\n            print(f\"fail: nao ha ninguem no carro\")\n        else :\n            self.psg-=1\n    \n    def fuel(self, increment: int):\n        self.gas+=increment\n        if self.gas>=100:\n            self.gas=100\n        \n    def drive(self, distance: int):\n        if self.psg==0:\n            print(f\"fail: nao ha ninguem no carro\")\n        elif self.gas==0:\n            print(f\"fail: tanque vazio\")\n        elif self.gas<distance:\n            print(f\"fail: tanque vazio apos andar {self.gas} km\")\n            self.km+=self.gas\n            self.gas=0\n        else :\n            self.km+=distance\n            self.gas-=distance\n\ndef main():\n    carro=Carro()\n    while True:\n        line= input()\n        print(f\"${line}\")\n        args= line.split()\n        if args[0]==\"end\":\n            break\n        elif args[0]==\"enter\":\n            carro.enter()\n        elif args[0]==\"show\":\n            print(carro)\n        elif args[0]==\"leave\":\n            carro.leave()\n        elif args[0]==\"fuel\":\n            increment = int(args[1])\n            carro.fuel(increment)\n        elif args[0]==\"drive\":\n            increment= int(args[1])\n            carro.drive(increment)\nmain()\n",
+            "lines": "60"
+        }
+    ]
+}

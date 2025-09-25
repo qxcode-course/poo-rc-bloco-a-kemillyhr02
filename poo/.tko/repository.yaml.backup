@@ -11,10 +11,11 @@ expanded:
 tasks:
   toalha: '{rate:100, human:_, other:_, alone:10}'
   animal: '{rate:100, alone:10}'
+  carro: '{rate:100, alone:10}'
 flags:
   quests: 0
   tracks: 0
   tasks: 0
   graph: 1
   xray: 0
-index: toalha
+index: carro
