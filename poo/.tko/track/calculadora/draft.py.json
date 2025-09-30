@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-30_14-31-31",
+            "content": "@@ -860,37 +860,8 @@\n den%0A\n-            self.battery -=1%0A\n def \n@@ -1557,11 +1557,11 @@\n sao(\n-b,a\n+a,b\n )%0A%0A%0A\n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-09-30_14-32-16",
+            "content": "@@ -642,19 +642,19 @@\n o(self, \n-num\n+den\n : float,\n@@ -654,19 +654,19 @@\n  float, \n-den\n+num\n :float):\n@@ -1582,19 +1582,19 @@\n divisao(\n-a,b\n+b,a\n )%0A%0A%0Amain\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-09-30_14-32-49",
+            "content": "@@ -811,37 +811,8 @@\n o%22)%0A\n-            self.battery -=1%0A\n     \n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-09-30_14-34-01",
+            "content": "@@ -811,24 +811,44 @@\n o%22)%0A        \n+    self.battery -=1\n %0A        els\n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-09-30_14-34-16",
+            "content": "@@ -815,36 +815,16 @@\n         \n-    self.battery -=1\n %0A       \n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-09-30_14-34-47",
+            "content": "class Calculator:\n    def __init__(self, batteryMax: int):\n        self.battery: int=0\n        self.batteryMax: int = batteryMax\n        self.display: float = 0\n    \n    def __str__(self)-> str:\n        return f\"display = {self.display:.2f}, battery = {self.battery}\"\n    \n    def recarregar(self, increment: int):\n        self.battery+= increment\n        if self.battery >= self.batteryMax:\n            self.battery=self.batteryMax\n\n    def somar(self, a : int , b: int):\n        if self.battery==0:\n            print(\"fail: bateria insuficiente\")\n        else :\n            self.display= a+b\n            self.battery-=1\n    \n    def divisao(self, num: float, den:float):\n        if self.battery==0:\n            print(\"fail: bateria insuficiente\")\n        elif den==0:\n            print(\"fail: divisao por zero\")\n            self.battery -=1\n        else:\n            self.display = num/den\n            self.battery -=1\ndef main():\n    calculator= Calculator(0)\n    while True :\n        line= input()\n        print(f\"${line}\")\n        args= line.split()\n        if args[0]==\"end\":\n            break\n        elif args[0]==\"init\":\n            increment=int(args[1])\n            calculator=Calculator(increment)\n        elif args[0]==\"show\":\n            print(calculator)\n        elif args[0]==\"charge\":\n            increment=int(args[1])\n            calculator.recarregar(increment)\n        elif args[0]==\"sum\":\n            a=int(args[1])\n            b=int(args[2])\n            calculator.somar(a,b)\n        elif args[0]==\"div\":\n            a=float(args[1])\n            b= float(args[2])\n            calculator.divisao(a,b)\n\n\nmain()",
+            "lines": "57"
+        }
+    ]
+}

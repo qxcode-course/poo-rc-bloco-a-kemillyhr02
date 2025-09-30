@@ -1,0 +1,29 @@
+2025-09-30 13:21:24, MOVE, v:1, k:enxugar, mode:PICK
+2025-09-30 13:21:25, EXEC, v:1, k:enxugar, mode:FULL, rate:0, size:53
+2025-09-30 13:21:41, MOVE, v:1, k:enxugar, mode:BACK
+2025-09-30 13:21:43, MOVE, v:1, k:calculadora, mode:DOWN
+2025-09-30 13:21:58, MOVE, v:1, k:carro, mode:PICK
+2025-09-30 13:21:58, EXEC, v:1, k:carro, mode:FULL, rate:100
+2025-09-30 13:22:00, EXEC, v:1, k:carro, mode:FULL, rate:100
+2025-09-30 13:22:02, EXEC, v:1, k:carro, mode:FULL, rate:100
+2025-09-30 13:22:06, MOVE, v:1, k:carro, mode:BACK
+2025-09-30 13:24:10, MOVE, v:1, k:enxugar, mode:PICK
+2025-09-30 13:24:11, EXEC, v:1, k:enxugar, mode:FULL, rate:0
+2025-09-30 13:24:53, EXEC, v:1, k:enxugar, mode:FULL, rate:20, size:53
+2025-09-30 13:29:08, EXEC, v:1, k:enxugar, mode:FULL, rate:30, size:62
+2025-09-30 13:30:07, EXEC, v:1, k:enxugar, mode:FULL, rate:50, size:62
+2025-09-30 13:30:52, EXEC, v:1, k:enxugar, mode:FULL, rate:90, size:62
+2025-09-30 13:32:54, EXEC, v:1, k:enxugar, mode:FULL, rate:100, size:66
+2025-09-30 13:33:01, MOVE, v:1, k:enxugar, mode:BACK
+2025-09-30 13:33:08, SELF, v:1, k:enxugar, rate:100, alone:10
+2025-09-30 14:31:30, MOVE, v:1, k:calculadora, mode:PICK
+2025-09-30 14:31:31, EXEC, v:1, k:calculadora, mode:FULL, rate:72, size:55
+2025-09-30 14:32:16, EXEC, v:1, k:calculadora, mode:FULL, rate:81, size:56
+2025-09-30 14:32:49, EXEC, v:1, k:calculadora, mode:FULL, rate:81, size:56
+2025-09-30 14:34:01, EXEC, v:1, k:calculadora, mode:FULL, rate:100, size:57
+2025-09-30 14:34:03, MOVE, v:1, k:calculadora, mode:BACK
+2025-09-30 14:34:15, MOVE, v:1, k:calculadora, mode:PICK
+2025-09-30 14:34:16, EXEC, v:1, k:calculadora, mode:FULL, rate:81, size:57
+2025-09-30 14:34:47, EXEC, v:1, k:calculadora, mode:FULL, rate:100, size:57
+2025-09-30 14:34:49, MOVE, v:1, k:calculadora, mode:BACK
+2025-09-30 14:34:54, SELF, v:1, k:calculadora, rate:100, alone:10
