@@ -1,5 +1,4 @@
-class Carro:
-    
+class Carro:  
     def __init__(self):
         self.psg: int=0
         self.km: int=0
