@@ -4,7 +4,7 @@ nomeAluno: "kemilly ribeiro"
 matricula: "585962"
 PRINCIPAL
 ---
-w54w4w45deys5dtgeff
+
 # Configurações iniciais no codespace
 
 ```bash
